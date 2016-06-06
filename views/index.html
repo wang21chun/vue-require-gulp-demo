@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>test</title>
+</head>
+
+<body id="App">
+    Holle Word!
+    <router-view></router-view>
+
+    <script src="../resources/lib/requirejs/require.js"></script>
+    <script src="../resources/js/require.config.js"></script>
+    <script src="../resources/dist/js/lib.js"></script>
+    <script type="text/javascript">
+    require(['App'], function(App) {
+        console.log("Holle Word !!!")
+    });
+    </script>
+
+</body>
+
+</html>
