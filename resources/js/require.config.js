@@ -1,13 +1,12 @@
 require.config({
-    baseUrl: '../resources/',
+    baseUrl: './',
     paths: {
-        Style: 'http://jscss.pindou.com/snacks-h5/misc/css/style',
         'Css-all': 'dist/css/css_all'
     },
     map: {
         '*': {
-            'css': 'lib/require-css/css',
-            'text': 'lib/text/text'
+            'css': 'dist/js/css',
+            'text': 'dist/js/text'
         }
     },
     // enforceDefine: true,
