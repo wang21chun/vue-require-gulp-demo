@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html id="App">
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=640,target-densitydpi=high-dpi,user-scalable=no" />
     <meta charset="utf-8">
-    <title>首页</title>
+    <title>{{title}}</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="../dist/css/css_all.css">
 </head>
 
-<body id="App">
+<body >
     <router-view></router-view>
     <script src="../dist/js/require.js"></script>
     <script src="../dist/js/require.config.js"></script>
-    <script src="../dist/js/lib.js"></script>
+    <script src="../dist/js/index.js"></script>
     <script type="text/javascript">
+    var initData = {cityName:"北京","title":"测试"};
     require(['App'], function(App) {});
     </script>
 </body>
