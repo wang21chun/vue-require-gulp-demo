@@ -1,0 +1,20 @@
+<!-- 首页菜单列表 -->
+<div class="menuList">
+    <ul class="menus">
+        <!-- data-id 为菜单的ID，方便请求详情使用 -->
+        <li data-id="1" v-for="item in items" transition="item">
+            <div class="cover" style="background:url(http://i01.pictn.sogoucdn.com/15b1fabb1875eee5) no-repeat center center;background-size:cover;"></div>
+            <div class="detail">
+                <div class="title">{{item.title}}</div>
+                <div class="price"><em>{{item.price}}</em>元</div>
+                <div class="describe">{{item.msg}}</div>
+            </div>
+            <div class="countdown">距优惠结束 4分钟</div>
+            <div class="controller">
+                <a href="javascript:void(0);" class="plus"></a>
+                <span>0</span>
+                <a href="javascript:void(0);" class="minus"></a>
+            </div>
+        </li>
+    </ul>
+</div>
